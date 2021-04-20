@@ -1,0 +1,72 @@
+$color_one: rgb(255, 214, 210);
+$color_two: blue;
+$color_three: black;
+
+$font_size_one: 13px;
+
+$width_one: 400px;
+$width_two: 800px;
+$width_three: 150px;
+
+@mixin a_one {
+    color: $color_three;
+    font-size: $font_size_one;
+}
+
+@mixin flex_one {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex_two {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex_three {
+    display: flex;
+    a {
+        text-decoration: none;
+    }
+    p {
+        margin: 20px 0 10px 0;
+    }
+    .f_r_image img, .f_l_image img {
+        width: $width_two;
+    }
+    .f_r_info img, .f_l_info img {
+        width: $width_one;
+    }
+}
+
+@mixin nav {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    button {
+        color: $color_two;
+        background-color: white;
+        border: 1px solid $color_two;
+    }
+}
+
+@mixin footer_li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+@mixin buttons_sign_up {
+    padding: 0 5px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    img {
+        display: inline-block;
+        width: 20px;
+    }
+    p {
+        display: inline-block;
+    }
+}
