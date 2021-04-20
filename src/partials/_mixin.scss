@@ -1,16 +1,18 @@
 @mixin a_one {
+    margin: 10px 0;
+    display: block;
     color: $color_three;
     font-size: $font_size_one;
 }
 
 @mixin a_two {
-    margin-top: 30px;
+    margin: 30px 0;
     display: block;
 }
 
 @mixin flex_one {
     width: 100%;
-    margin: 30px 0;
+    margin: 20px 0;
     padding: 0 15%;
     display: flex;
     justify-content: space-between;
@@ -56,10 +58,18 @@
     }
 }
 
+@mixin flex_five {
+    width: 100%;
+    margin: 20px 20px;
+    padding: 0 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 @mixin nav {
+    cursor: pointer;
     list-style: none;
-    display: inline-block;
     margin: 0 10px;
     button {
         padding: 5px;
@@ -75,11 +85,14 @@
 }
 
 @mixin footer_li {
+    cursor: pointer;
     list-style: none;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 @mixin buttons_sign_up {
+    display: flex;
+    align-items: center;
     border-radius: 5px;
     padding: 0 5px;
     height: 30px;
@@ -87,6 +100,7 @@
     color: white;
     background-color: blue;
     img {
+        margin-right: 5px;
         width: 20px;
     }
 }

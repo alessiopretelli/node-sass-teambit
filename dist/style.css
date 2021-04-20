@@ -2,14 +2,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: "Montserrat", sans-serif;
 }
 
-h4 {
+h1 {
   margin: 20px 0;
 }
 
-h1 {
+h4 {
   margin: 20px 0;
 }
 
@@ -18,47 +21,26 @@ hr {
   margin: 0 15%;
 }
 
-#center_stuff {
-  padding: 20px 0;
-}
-
-.bottom_stuff {
-  text-align: center;
-}
-
-.jumbotron_info {
-  width: 600px;
-}
-
-.jumbotron_info_button button, .jumbotron_info_button p {
-  margin-top: 10px;
-  display: inline-block;
-}
-
-.footer_info {
-  width: 300px;
-}
-
-footer h3 {
-  margin-bottom: 20px;
-}
-
 header {
   margin-bottom: 20px;
 }
 header .header_stuff {
   width: 100%;
-  margin: 30px 0;
+  margin: 20px 0;
   padding: 0 15%;
   display: flex;
   justify-content: space-between;
 }
-header .nav li {
+header .nav ul {
+  display: flex;
+  align-items: center;
+}
+header .nav ul li {
+  cursor: pointer;
   list-style: none;
-  display: inline-block;
   margin: 0 10px;
 }
-header .nav li button {
+header .nav ul li button {
   padding: 5px;
   display: flex;
   align-items: center;
@@ -66,24 +48,46 @@ header .nav li button {
   background-color: white;
   border: 1px solid blue;
 }
-header .nav li button img {
+header .nav ul li button img {
   width: 20px;
 }
-header .nav li button {
+header .nav ul li button {
+  cursor: pointer;
   border-radius: 5px;
 }
 
 #jumbotron {
+  padding: 0 15%;
   width: 100%;
   margin: 30px 0;
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
-#jumbotron p {
-  margin-bottom: 30px;
+#jumbotron .jumbotron_info {
+  width: 50%;
 }
-#jumbotron button {
+#jumbotron .jumbotron_image {
+  width: 50%;
+}
+#jumbotron .jumbotron_image img {
+  width: 100%;
+}
+
+.jumbotron_info_button {
+  margin-top: 30px;
+}
+.jumbotron_info_button .buttons {
+  display: flex;
+  align-items: center;
+}
+.jumbotron_info_button .buttons p {
+  margin: 0 10px;
+}
+.jumbotron_info_button .buttons button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
   border-radius: 5px;
   padding: 0 5px;
   height: 30px;
@@ -91,33 +95,40 @@ header .nav li button {
   color: white;
   background-color: blue;
 }
-#jumbotron button img {
+.jumbotron_info_button .buttons button img {
+  margin-right: 5px;
   width: 20px;
 }
-#jumbotron a {
+.jumbotron_info_button a {
+  margin: 10px 0;
+  display: block;
   color: black;
   font-size: 13px;
-}
-#jumbotron .jumbotron_image img {
-  width: 700px;
 }
 
 #center_stuff {
   text-align: center;
+  padding: 20px 0;
   background-color: #ffd6d2;
+}
+#center_stuff h3 {
+  margin: 25px 0 45px;
+}
+#center_stuff hr {
+  margin-bottom: 45px;
 }
 #center_stuff .upper_imgs {
   width: 100%;
-  margin: 30px 0;
+  margin: 20px 20px;
   padding: 0 15%;
   display: flex;
   justify-content: space-between;
 }
-#center_stuff .upper_imgs #cat {
-  width: 50px;
+#center_stuff .upper_imgs div {
+  width: 25%;
 }
-#center_stuff .upper_imgs img {
-  width: 100px;
+#center_stuff .upper_imgs div img {
+  height: 75px;
 }
 #center_stuff .down_img {
   width: 100%;
@@ -126,11 +137,12 @@ header .nav li button {
   justify-content: center;
 }
 #center_stuff .down_img img {
-  width: 150px;
+  width: 300px;
 }
 
 .float_left {
   width: 100%;
+  margin: 30px 0;
   display: flex;
 }
 .float_left a {
@@ -145,13 +157,17 @@ header .nav li button {
 .float_left .f_r_info img, .float_left .f_l_info img {
   width: 400px;
 }
-.float_left a {
-  margin-top: 30px;
+.float_left .f_l_info {
+  width: 30%;
+}
+.float_left .f_l_info a {
+  margin: 30px 0;
   display: block;
 }
 
 .float_right {
   width: 100%;
+  margin: 30px 0;
   display: flex;
   justify-content: flex-end;
 }
@@ -167,25 +183,38 @@ header .nav li button {
 .float_right .f_r_info img, .float_right .f_l_info img {
   width: 400px;
 }
-.float_right a {
-  margin-top: 30px;
+.float_right .f_r_info {
+  width: 30%;
+}
+.float_right .f_r_info a {
+  margin: 30px 0;
   display: block;
 }
 
 .bottom_stuff {
-  padding: 30px 0;
+  padding: 20px 0;
+  text-align: center;
   background-color: #ffd6d2;
 }
 .bottom_stuff #chat {
   border: 1px solid blue;
-  padding: 5px;
+  padding: 10px;
   width: 500px;
   margin: 0 auto;
   background-color: white;
 }
+.bottom_stuff #chat #comment {
+  margin-bottom: 20px;
+}
 .bottom_stuff #chat .chat_imgs_names {
   display: flex;
   align-items: center;
+}
+.bottom_stuff #chat .chat_imgs_names .chat_name {
+  margin-left: 10px;
+}
+.bottom_stuff #chat .chat_imgs_names .chat_name p {
+  font-size: 10px;
 }
 .bottom_stuff #chat img {
   width: 50px;
@@ -194,30 +223,27 @@ header .nav li button {
   color: blue;
   margin: 0;
 }
-.bottom_stuff button {
-  border-radius: 5px;
-  padding: 0 5px;
-  height: 30px;
-  font-weight: 600;
-  color: white;
-  background-color: blue;
-}
-.bottom_stuff button img {
-  width: 20px;
-}
-.bottom_stuff a {
-  display: block;
-  color: black;
-  font-size: 13px;
+.bottom_stuff .jumbotron_info_button .buttons {
+  justify-content: center;
 }
 
 footer {
   margin: 20px 0;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+footer h3 {
+  margin-bottom: 20px;
 }
 footer .footer_info {
   display: flex;
+  width: 300px;
+}
+footer .footer_info img {
+  width: 50px;
+  margin-right: 10px;
 }
 footer .footer_info strong {
   color: blue;
@@ -227,7 +253,7 @@ footer .about,
 footer .connect,
 footer .lobs,
 footer .blog {
-  margin: 0 50px;
+  margin: 0 20px;
   width: 150px;
 }
 footer .product li,
@@ -235,6 +261,7 @@ footer .about li,
 footer .connect li,
 footer .lobs li,
 footer .blog li {
+  cursor: pointer;
   list-style: none;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }

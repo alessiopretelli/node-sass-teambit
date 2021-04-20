@@ -1,67 +1,108 @@
 #jumbotron {
+    padding: 0 15%;
     @include flex_two;
-    p {
-        margin-bottom: 30px;
+    .jumbotron_info {
+        width: 50%;
     }
-    button {
-        @include buttons_sign_up;
-    }
-    a {
-        @include a_one;
-    }
-    .jumbotron_image img {
-        width: $width_two;
+    .jumbotron_image {
+        width: 50%;
+        img {
+            width: 100%;
+        }
     }
     margin-bottom: 30px;
 }
+.jumbotron_info_button {
+    margin-top: 30px;
+    .buttons {
+        display: flex;
+        align-items: center;
+        p {
+            margin: 0 10px;
+        }
+        button {
+            cursor: pointer;
+            @include buttons_sign_up;
+        }    
+    }
+    a {
+        @include a_one;
+    }  
+}           
 
 #center_stuff {
     text-align: center;
+    padding: 20px 0;
     background-color: $color_one;
+    h3 {
+        margin: 25px 0 45px;
+    }
+    hr {
+        margin-bottom: 45px;
+    }
     .upper_imgs {
-        @include flex_one;
-        #cat {
-            width: 50px;
-        }
-        img {
-            width: $width_three;
+        @include flex_five;
+        div {
+            width: 25%;
+            img {
+                height: 75px;
+            }    
         }
     }
     .down_img {
         @include flex_two;
         img {
-            width: $width_four;
+            width: $width_five;
         }
     }
 }
 
 .float_left {
     width: 100%;
+    margin: 30px 0;
     @include flex_three;
-    a {
-        @include a_two;
+    .f_l_info {
+        width: 30%;
+        a {
+            @include a_two;
+        }    
     }
 }
+
 .float_right {
     width: 100%;
+    margin: 30px 0;
     @include flex_four;
-    a {
-        @include a_two;
+    .f_r_info {
+        width: 30%;
+        a {
+            @include a_two;
+        }    
     }
 }
 
 .bottom_stuff {
-    padding: 30px 0;
+    padding: 20px 0;
+    text-align: center;
     background-color: $color_one;
     #chat {
         border: 1px solid $color_two;
-        padding: 5px;
+        padding: 10px;
         width: 500px;
         margin: 0 auto;
-        background-color: white;
+        background-color: white; 
+        #comment {
+            margin-bottom: 20px;
+        }
         .chat_imgs_names {
             display: flex;
             align-items: center;
+            .chat_name {
+                margin-left: 10px;
+                p {
+                    font-size: 10px;
+                }    
+            }
         }
         img {
             width: 50px;
@@ -70,12 +111,8 @@
             color: $color_two;
             margin: 0;
         }
+    }
+    .jumbotron_info_button .buttons {
+        justify-content: center;
     }    
-    button {
-        @include buttons_sign_up;
-    }
-    a {
-        display: block;
-        @include a_one;
-    }
 }

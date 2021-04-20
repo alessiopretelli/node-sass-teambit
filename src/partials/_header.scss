@@ -3,10 +3,17 @@ header {
         @include flex_one;
     }
     margin-bottom: 20px;
-    .nav li {
-        @include nav;
-        button {
-            border-radius: 5px;
+    .nav {
+        ul {
+            display: flex;
+            align-items: center;
+            li {
+                @include nav;
+                button {
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+            }    
         }
-    }
+    } 
 }
