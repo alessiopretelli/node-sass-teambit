@@ -1,0 +1,22 @@
+footer {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    .footer_info {
+        display: flex;
+        strong {
+            color: $color_two;
+        }
+    }
+    .product,
+    .about,
+    .connect,
+    .lobs,
+    .blog {
+        li {
+            @include footer_li;
+        }
+        margin: 0 50px;
+        width: $width_four;
+    }
+}

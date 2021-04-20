@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+h4 {
+  margin: 20px 0;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+hr {
+  width: 70%;
+  margin: 0 15%;
+}
+
+#center_stuff {
+  padding: 20px 0;
+}
+
+.bottom_stuff {
+  text-align: center;
+}
+
+.jumbotron_info {
+  width: 600px;
+}
+
+.jumbotron_info_button button, .jumbotron_info_button p {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.footer_info {
+  width: 300px;
+}
+
+footer h3 {
+  margin-bottom: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+header .header_stuff {
+  width: 100%;
+  margin: 30px 0;
+  padding: 0 15%;
+  display: flex;
+  justify-content: space-between;
+}
+header .nav li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+header .nav li button {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  color: blue;
+  background-color: white;
+  border: 1px solid blue;
+}
+header .nav li button img {
+  width: 20px;
+}
+header .nav li button {
+  border-radius: 5px;
+}
+
+#jumbotron {
+  width: 100%;
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+#jumbotron p {
+  margin-bottom: 30px;
+}
+#jumbotron button {
+  border-radius: 5px;
+  padding: 0 5px;
+  height: 30px;
+  font-weight: 600;
+  color: white;
+  background-color: blue;
+}
+#jumbotron button img {
+  width: 20px;
+}
+#jumbotron a {
+  color: black;
+  font-size: 13px;
+}
+#jumbotron .jumbotron_image img {
+  width: 700px;
+}
+
+#center_stuff {
+  text-align: center;
+  background-color: #ffd6d2;
+}
+#center_stuff .upper_imgs {
+  width: 100%;
+  margin: 30px 0;
+  padding: 0 15%;
+  display: flex;
+  justify-content: space-between;
+}
+#center_stuff .upper_imgs #cat {
+  width: 50px;
+}
+#center_stuff .upper_imgs img {
+  width: 100px;
+}
+#center_stuff .down_img {
+  width: 100%;
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+#center_stuff .down_img img {
+  width: 150px;
+}
+
+.float_left {
+  width: 100%;
+  display: flex;
+}
+.float_left a {
+  text-decoration: none;
+}
+.float_left p {
+  margin: 20px 0 10px 0;
+}
+.float_left .f_r_image img, .float_left .f_l_image img {
+  width: 700px;
+}
+.float_left .f_r_info img, .float_left .f_l_info img {
+  width: 400px;
+}
+.float_left a {
+  margin-top: 30px;
+  display: block;
+}
+
+.float_right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.float_right a {
+  text-decoration: none;
+}
+.float_right p {
+  margin: 20px 0 10px 0;
+}
+.float_right .f_r_image img, .float_right .f_l_image img {
+  width: 700px;
+}
+.float_right .f_r_info img, .float_right .f_l_info img {
+  width: 400px;
+}
+.float_right a {
+  margin-top: 30px;
+  display: block;
+}
+
+.bottom_stuff {
+  padding: 30px 0;
+  background-color: #ffd6d2;
+}
+.bottom_stuff #chat {
+  border: 1px solid blue;
+  padding: 5px;
+  width: 500px;
+  margin: 0 auto;
+  background-color: white;
+}
+.bottom_stuff #chat .chat_imgs_names {
+  display: flex;
+  align-items: center;
+}
+.bottom_stuff #chat img {
+  width: 50px;
+}
+.bottom_stuff #chat h4 {
+  color: blue;
+  margin: 0;
+}
+.bottom_stuff button {
+  border-radius: 5px;
+  padding: 0 5px;
+  height: 30px;
+  font-weight: 600;
+  color: white;
+  background-color: blue;
+}
+.bottom_stuff button img {
+  width: 20px;
+}
+.bottom_stuff a {
+  display: block;
+  color: black;
+  font-size: 13px;
+}
+
+footer {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+footer .footer_info {
+  display: flex;
+}
+footer .footer_info strong {
+  color: blue;
+}
+footer .product,
+footer .about,
+footer .connect,
+footer .lobs,
+footer .blog {
+  margin: 0 50px;
+  width: 150px;
+}
+footer .product li,
+footer .about li,
+footer .connect li,
+footer .lobs li,
+footer .blog li {
+  list-style: none;
+  margin-bottom: 5px;
+}

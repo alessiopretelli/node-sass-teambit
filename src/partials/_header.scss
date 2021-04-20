@@ -1,0 +1,12 @@
+header {
+    .header_stuff {
+        @include flex_one;
+    }
+    margin-bottom: 20px;
+    .nav li {
+        @include nav;
+        button {
+            border-radius: 5px;
+        }
+    }
+}

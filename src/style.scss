@@ -1,4 +1,15 @@
-@import 'partials/header.scss';
-@import 'partials/main.scss';
-@import 'partials/footer.scss';
-@import 'partials/variables.scss';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+@import 'partials/variables';
+@import 'partials/mixin';
+@import 'partials/common';
+@import 'partials/header';
+@import 'partials/main';
+@import 'partials/footer';

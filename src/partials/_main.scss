@@ -1,0 +1,81 @@
+#jumbotron {
+    @include flex_two;
+    p {
+        margin-bottom: 30px;
+    }
+    button {
+        @include buttons_sign_up;
+    }
+    a {
+        @include a_one;
+    }
+    .jumbotron_image img {
+        width: $width_two;
+    }
+    margin-bottom: 30px;
+}
+
+#center_stuff {
+    text-align: center;
+    background-color: $color_one;
+    .upper_imgs {
+        @include flex_one;
+        #cat {
+            width: 50px;
+        }
+        img {
+            width: $width_three;
+        }
+    }
+    .down_img {
+        @include flex_two;
+        img {
+            width: $width_four;
+        }
+    }
+}
+
+.float_left {
+    width: 100%;
+    @include flex_three;
+    a {
+        @include a_two;
+    }
+}
+.float_right {
+    width: 100%;
+    @include flex_four;
+    a {
+        @include a_two;
+    }
+}
+
+.bottom_stuff {
+    padding: 30px 0;
+    background-color: $color_one;
+    #chat {
+        border: 1px solid $color_two;
+        padding: 5px;
+        width: 500px;
+        margin: 0 auto;
+        background-color: white;
+        .chat_imgs_names {
+            display: flex;
+            align-items: center;
+        }
+        img {
+            width: 50px;
+        }
+        h4 {
+            color: $color_two;
+            margin: 0;
+        }
+    }    
+    button {
+        @include buttons_sign_up;
+    }
+    a {
+        display: block;
+        @include a_one;
+    }
+}

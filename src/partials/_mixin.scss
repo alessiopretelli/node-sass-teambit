@@ -1,26 +1,24 @@
-$color_one: rgb(255, 214, 210);
-$color_two: blue;
-$color_three: black;
-
-$font_size_one: 13px;
-
-$width_one: 400px;
-$width_two: 800px;
-$width_three: 150px;
-
 @mixin a_one {
     color: $color_three;
     font-size: $font_size_one;
 }
 
+@mixin a_two {
+    margin-top: 30px;
+    display: block;
+}
+
 @mixin flex_one {
     width: 100%;
+    margin: 30px 0;
+    padding: 0 15%;
     display: flex;
     justify-content: space-between;
 }
 
 @mixin flex_two {
     width: 100%;
+    margin: 30px 0;
     display: flex;
     justify-content: center;
 }
@@ -41,14 +39,38 @@ $width_three: 150px;
     }
 }
 
+@mixin flex_four {
+    display: flex;
+    justify-content: flex-end;
+    a {
+        text-decoration: none;
+    }
+    p {
+        margin: 20px 0 10px 0;
+    }
+    .f_r_image img, .f_l_image img {
+        width: $width_two;
+    }
+    .f_r_info img, .f_l_info img {
+        width: $width_one;
+    }
+}
+
+
 @mixin nav {
     list-style: none;
     display: inline-block;
     margin: 0 10px;
     button {
+        padding: 5px;
+        display: flex;
+        align-items: center;
         color: $color_two;
         background-color: white;
         border: 1px solid $color_two;
+    }
+    button img {
+        width: 20px;
     }
 }
 
@@ -58,15 +80,13 @@ $width_three: 150px;
 }
 
 @mixin buttons_sign_up {
+    border-radius: 5px;
     padding: 0 5px;
-    height: 50px;
+    height: 30px;
+    font-weight: 600;
     color: white;
     background-color: blue;
     img {
-        display: inline-block;
         width: 20px;
-    }
-    p {
-        display: inline-block;
     }
 }
