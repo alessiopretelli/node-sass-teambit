@@ -56,6 +56,9 @@ header .nav ul li button {
   cursor: pointer;
   border-radius: 5px;
 }
+header .nav ul li button img {
+  margin-right: 5px;
+}
 
 #jumbotron {
   padding: 0 10%;
