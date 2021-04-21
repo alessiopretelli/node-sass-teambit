@@ -1,7 +1,7 @@
 @mixin a_one {
-    margin: 10px 0;
+    margin: 15px 0;
     display: block;
-    color: $color_three;
+    color: $color_two;
     font-size: $font_size_one;
 }
 
@@ -12,7 +12,7 @@
 
 @mixin flex_one {
     width: 100%;
-    margin: 20px 0;
+    margin: 15px 0;
     padding: 0 10%;
     display: flex;
     justify-content: space-between;
@@ -97,7 +97,7 @@
     height: 30px;
     font-weight: 600;
     color: white;
-    background-color: blue;
+    background-color: $color_four;
     img {
         margin-right: 5px;
         width: 20px;

@@ -11,11 +11,11 @@ footer {
         display: flex;
         width: 300px;
         img {
-            width: 50px;
+            width: $width_three;
             margin-right: 10px;
         }
         strong {
-            color: $color_two;
+            color: $color_one;
         }
     }
     .product,

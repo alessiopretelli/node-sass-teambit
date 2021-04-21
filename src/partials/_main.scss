@@ -34,6 +34,7 @@
     text-align: center;
     padding: 20px 0;
     background-color: $color_one;
+    color: white;
     h3 {
         margin: 25px 0 45px;
     }
@@ -65,6 +66,7 @@
         width: 30%;
         a {
             @include a_two;
+            color: $color_two;
         }    
     }
 }
@@ -77,6 +79,7 @@
         width: 30%;
         a {
             @include a_two;
+            color: $color_two;
         }    
     }
 }
@@ -85,6 +88,7 @@
     padding: 20px 0;
     text-align: center;
     background-color: $color_one;
+    color: white;
     #chat {
         position: relative;
         border: 1px solid $color_two;
@@ -93,6 +97,9 @@
         width: 500px;
         margin: 0 auto;
         background-color: white; 
+        p {
+            color: $color_three;
+        }    
         #comment {
             margin-bottom: 20px;
         }
@@ -122,7 +129,13 @@
             background-color: $color_two;
         }
     }
-    .jumbotron_info_button .buttons {
-        justify-content: center;
-    }    
+    .jumbotron_info_button {
+        .buttons {
+            justify-content: center;
+        }    
+        a {
+            @include a_two;
+            color: white;
+        }
+    }
 }
