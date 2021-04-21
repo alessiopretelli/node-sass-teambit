@@ -6,6 +6,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  color: #532f2f;
 }
 
 h1 {
@@ -17,8 +18,8 @@ h4 {
 }
 
 hr {
-  width: 70%;
-  margin: 0 15%;
+  width: 80%;
+  margin: 0 10%;
 }
 
 header {
@@ -27,7 +28,7 @@ header {
 header .header_stuff {
   width: 100%;
   margin: 20px 0;
-  padding: 0 15%;
+  padding: 0 10%;
   display: flex;
   justify-content: space-between;
 }
@@ -57,7 +58,7 @@ header .nav ul li button {
 }
 
 #jumbotron {
-  padding: 0 15%;
+  padding: 0 10%;
   width: 100%;
   margin: 30px 0;
   display: flex;
@@ -119,8 +120,7 @@ header .nav ul li button {
 }
 #center_stuff .upper_imgs {
   width: 100%;
-  margin: 20px 20px;
-  padding: 0 15%;
+  padding: 0 10%;
   display: flex;
   justify-content: space-between;
 }
@@ -197,8 +197,10 @@ header .nav ul li button {
   background-color: #ffd6d2;
 }
 .bottom_stuff #chat {
+  position: relative;
   border: 1px solid blue;
-  padding: 10px;
+  border-radius: 5px;
+  padding: 15px;
   width: 500px;
   margin: 0 auto;
   background-color: white;
@@ -219,9 +221,17 @@ header .nav ul li button {
 .bottom_stuff #chat img {
   width: 50px;
 }
-.bottom_stuff #chat h4 {
+.bottom_stuff #chat h5 {
   color: blue;
   margin: 0;
+}
+.bottom_stuff #chat #virgolette {
+  border-radius: 5px;
+  width: 30px;
+  position: absolute;
+  top: -15px;
+  left: -5px;
+  background-color: blue;
 }
 .bottom_stuff .jumbotron_info_button .buttons {
   justify-content: center;

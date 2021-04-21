@@ -1,5 +1,5 @@
 #jumbotron {
-    padding: 0 15%;
+    padding: 0 10%;
     @include flex_two;
     .jumbotron_info {
         width: 50%;
@@ -86,8 +86,10 @@
     text-align: center;
     background-color: $color_one;
     #chat {
+        position: relative;
         border: 1px solid $color_two;
-        padding: 10px;
+        border-radius: 5px;
+        padding: 15px;
         width: 500px;
         margin: 0 auto;
         background-color: white; 
@@ -107,9 +109,17 @@
         img {
             width: 50px;
         }
-        h4 {
+        h5 {
             color: $color_two;
             margin: 0;
+        }
+        #virgolette {
+            border-radius: 5px;
+            width: 30px;
+            position: absolute;
+            top: -15px;
+            left: -5px;
+            background-color: $color_two;
         }
     }
     .jumbotron_info_button .buttons {
